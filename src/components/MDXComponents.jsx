@@ -5,6 +5,8 @@ import { Border } from '@/components/Border'
 import { GrayscaleTransitionImage } from '@/components/GrayscaleTransitionImage'
 import { StatList, StatListItem } from '@/components/StatList'
 import { TagList, TagListItem } from '@/components/TagList'
+import { Testimonial } from '@/components/Testimonial'
+
 
 export const MDXComponents = {
   Blockquote({ className, ...props }) {
@@ -74,4 +76,7 @@ export const MDXComponents = {
       />
     )
   },
+  Testimonial({classname,...props}){
+    return <Testimonial className={classname} {...props}/>
+  }
 }
