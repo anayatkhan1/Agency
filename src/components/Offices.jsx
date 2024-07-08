@@ -21,17 +21,10 @@ export function Offices({ invert = false, ...props }) {
   return (
     <ul role="list" {...props}>
       <li>
-        <Office name="Bentonville" invert={invert}>
-          702 S.E. Fifth St., Suite 34.
+        <Office name="Bengaluru" invert={invert}>
+          302, Harsha Layout, Kengeri 
           <br />
-          Bentonville, Arkansas
-        </Office>
-      </li>
-      <li>
-        <Office name="Gandhinagar" invert={invert}>
-          Amba Business Park,
-          <br />
-          Gandhinagar, Gujarat, IN
+          Bengaluru, Karnataka, IN
         </Office>
       </li>
     </ul>

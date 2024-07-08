@@ -8,15 +8,13 @@ import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
-import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-dark.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-dark.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-dark.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-dark.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-dark.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-dark.svg'
-import logoPhobia from '@/images/clients/phobia/logo-dark.svg'
-import logoUnseal from '@/images/clients/unseal/logo-dark.svg'
+import  core from '@/images/work/core-dark.svg'
+import oneheadlight from '@/images/work/oneheadlight-dark.svg'
+import swiggy from '@/images/work/swiggy-dark.svg'
+import  vardaan from '@/images/work/vardaan-dark.svg'
+import  juniper from '@/images/work/juniper-dark.svg'
+import  myshell from '@/images/work/myshell-dark.svg'
+
 import { formatDate } from '@/lib/formatDate'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 
@@ -38,7 +36,7 @@ function CaseStudies({ caseStudies }) {
                     <Image
                       src={caseStudy.logo}
                       alt=""
-                      className="h-16 w-16 flex-none"
+                      className="h-16  flex-none"
                       unoptimized
                     />
                     <h3 className="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
@@ -92,14 +90,13 @@ function CaseStudies({ caseStudies }) {
 }
 
 const clients = [
-  ['Phobia', logoPhobia],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+  ['Vardaan', vardaan],
+  ['Core Soccer Tech', core],
+  ['My Shell', myshell],
+  ['Swiggy', swiggy],
+  ['Juniper', juniper],
+  ['One Head light', oneheadlight],
+
 ]
 
 function Clients() {
@@ -155,13 +152,6 @@ export default async function Work() {
 
       <CaseStudies caseStudies={caseStudies} />
 
-      <Testimonial
-        className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
-      >
-        We approached <em>Studio</em> because we loved their past work. They
-        delivered something remarkably similar in record time.
-      </Testimonial>
 
       <Clients />
 

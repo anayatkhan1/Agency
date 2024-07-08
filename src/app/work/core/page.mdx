@@ -1,0 +1,51 @@
+import logo from '@/images/work/core-dark.svg'
+import imageHero from './hero.png'
+
+
+export const caseStudy = {
+  client: 'Core Soccer Tech',
+  title: 'Skip the sidelines, train with those you trust',
+  description:
+    'CORE is an innovative platform transforming soccer training through technology, fostering efficiency and enjoyment while supporting grassroots soccer with community-driven donations.',
+  summary: [
+    'CORE is a pioneering platform enhancing soccer training through cutting-edge technology, prioritizing efficiency and fun while supporting grassroots soccer with community-focused donations. Our custom-developed tools optimize the training experience, aiming to increase accessibility and participation in the sport.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2023-01',
+  service: 'Wordpress development, Flutter application, Backend development',
+  testimonial: {
+    author: { name: 'Dan Paulter', role: 'Founder of CORE' },
+    content:
+      "I'm truly impressed with your finished work and value your significant contribution to my business.",
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Having successfully developed a highly interactive and user-friendly platform for soccer enthusiasts, CORE approached us to expand their capabilities by creating both a web and mobile application.
+
+The goal was to provide a comprehensive, secure platform that enhances user engagement and offers seamless integration with gaming consoles. The platform needed to facilitate user registration, login, and real-time score displays, while also ensuring a smooth user experience on both web and mobile interfaces.
+
+To achieve this, we built a web application which allows users to register, log in, and generate QR display cards for players, alongside offering score displays with various filtering options. The dynamic and responsive interface of mobile application that supports functionalities such as connecting and disconnecting to a gaming console, manual and QR code-based login, and real-time display of live scores and leaderboards.
+
+By integrating these applications, we provided a secure, user-friendly solution that meets the needs of gaming enthusiasts, ensuring they can easily manage and view their gaming experiences across multiple platforms.
+
+## What we did
+
+<TagList>
+  <TagListItem>CMS (Wordpress)</TagListItem>
+  <TagListItem>Mobile (Flutter)</TagListItem>
+  <TagListItem>Backend development (Firebase)</TagListItem>
+</TagList>
+
+<Testimonial className="mt-24 sm:mt-32 lg:mt-40" client={{ name: 'CORE', logo: logo }} >
+  The work was challenging, but I hope it allowed team to enhance skills and level up. I'm impressed with your finished work and value your contribution to my business.
+</Testimonial>
+
+
