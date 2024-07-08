@@ -57,7 +57,7 @@ function CaseStudies({ caseStudies }) {
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-        We embrace technology as both the solution and the dilemma to today's greatest challenges, navigating a nuanced landscape where innovation sparks both progress and complexity.
+        We embrace technology as both the solution and the dilemma to today&apos;s greatest challenges, navigating a nuanced landscape where innovation sparks both progress and complexity.
         </p>
       </SectionIntro>
       <Container className="mt-16">
